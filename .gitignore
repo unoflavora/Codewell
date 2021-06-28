@@ -1,5 +1,9 @@
 *.json
-*.md
+*.md.
+.DS_STORE
+.package.json
+.package-lock.json
+.gitignore
 Assets/
 Design/
 node_modules/
