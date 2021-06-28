@@ -1,3 +1,6 @@
 package.json
 package-lock.json
 README.md
+Assets/
+Design/
+node_modules/
