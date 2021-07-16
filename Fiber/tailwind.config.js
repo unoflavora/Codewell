@@ -8,9 +8,16 @@ module.exports = {
       }),
       colors: {
         'purple-regal': '#4f12d1'
-      }
+      },
+      textColor: theme => theme('colors'),
+      textColor: {
+        'purple-regal': '#4f12d1'
+     }
+
     }
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

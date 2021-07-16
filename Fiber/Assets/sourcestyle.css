@@ -7,8 +7,27 @@ html {
     font-weight: 400;
 }
 
-ul li {
+#list-front li {
     background-repeat: no-repeat;
     line-height: 30px;
     padding-left: 30px;
 }
+
+footer li {
+    margin-top: 0.7em;
+}
+
+.widths {
+    max-width: 1260px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }

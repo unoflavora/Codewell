@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='./Assets/style.css'>
+    <link rel='stylesheet' href='./node_modules/@fortawesome/fontawesome-free/css/all.css'>
+</head>
+<body>
+    <div class='flex items-center justify-center h-screen'>
+        <div class="xl:w-1/2">
+            <div class='p-10 lg:p-32'>
+                <p class='font-extrabold text-4xl mt-10'>Create your Fiber account</p>
+                <div class='grid grid-cols-1 gap-6 mt-5'>
+                    <label class='block'>
+                        <span class='font-bold text-xl'>Your Name</span>
+                        <input type='text' class='mt-1 text-xl block w-full border-4 border-gray-300 py-2 rounded-md'>
+                    </label>
+                    <label class='block'>
+                        <span class='font-bold text-xl'>E-mail</span>
+                        <input type='email' class=' focus:outline-none mt-1 text-xl block w-full border-4 border-gray-300 py-2 rounded-md'>
+                    </label>
+                    <label class='block'>
+                        <span class='font-bold text-xl'>Password</span>
+                        <label class='flex w-full border-4 rounded-md border-gray-300 focus-within:border-blue-700'>
+                            <input type='password' id='password' class='block w-11/12 focus-within:outline-none focus-within:ring-0 text-xl border-0'>
+                            <i onclick=togglePassword() id='toggle' class='fas fa-eye fa-2x self-center'></i>
+                        </label>
+                    </label>
+                    <div class='block'>
+                        <label class='inline-flex'>
+                            <input type='checkbox' class='mt-1'>
+                            <span class='ml-2'>By creating an account on Fiber, you agree to the <a class='font-bold text-purple-regal'>Terms & Conditions</a>.
+                            </span>
+                        </label>
+                    </div>
+                    <div class='block'>
+                        <button class='bg-purple-regal w-full text-center text-white py-4 font-bold'>Create Fiber Account</button>
+                        <p class='text-center mt-2 w-full'>Already have an account? <a class='text-purple-500'>Sign in</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='hidden xl:flex xl:flex-col items-center justify-center bg-purple-regal h-screen lg:w-1/2'>
+            <img src='./Assets/Sign Up Image.png' class='h-1/2 max-w-lg xl:max-h-96'>
+            <p class='text-white font-extrabold mt-7 text-4xl text-center'>Unparalled Templates</p>
+            <p class='text-white font-extralight mt-4 text-xl text-center w-1/2'>
+                Crafted by a team of professional designers, our templates are unparalled in the market.
+            </p>
+
+        </div>
+    </div>
+
+   
+</body>
+
+<script>
+    function togglePassword() {
+        var x = document.getElementById('password');
+        var button = document.getElementById('toggle');
+        if (x.type === 'password') {
+            x.type = 'text';
+            button.classList.remove("fa-eye")
+            button.classList.add('fa-eye-slash')
+        } else {
+            x.type = 'password'
+            button.classList.add("fa-eye")
+            button.classList.remove('fa-eye-slash')
+
+        }
+    }
+</script>
